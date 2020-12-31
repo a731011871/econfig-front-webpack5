@@ -1,0 +1,107 @@
+@keyframes a-s {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes a-e {
+    43% {
+        animation-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+        transform: scale(0.75);
+    }
+
+    60% {
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        transform: translateY(-16px);
+    }
+
+    77% {
+        animation-timing-function: cubic-bezier(0.16, 0, 0.2, 1);
+        transform: none;
+    }
+
+    89% {
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes a-lb {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    5% {
+        transform: translateX(-240px);
+    }
+
+    15% {
+        transform: translateX(-30px);
+    }
+
+    25% {
+        transform: translateX(-30px);
+    }
+
+    30% {
+        transform: translateX(-20px);
+    }
+
+    45% {
+        transform: translateX(-20px);
+    }
+
+    50% {
+        transform: translateX(-15px);
+    }
+
+    65% {
+        transform: translateX(-15px);
+    }
+
+    70% {
+        transform: translateX(-10px);
+    }
+
+    95% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+#nlpt {
+    animation: a-s 0.5s 2.5s 1 forwards;
+    background-color: #f1f1f1;
+    height: 4px;
+    margin: 36px auto 20px;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+
+#nlpt::before {
+    animation: a-lb 20s 3s linear forwards;
+    background-color: #757575;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-300px);
+    width: 100%;
+}
+
+#launch-loading {
+    color: #757575;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    text-align: center;
+}

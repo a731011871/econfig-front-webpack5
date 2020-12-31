@@ -1,0 +1,38 @@
+.ant-spin-nested-loading{
+    height: 100%;
+    .ant-spin-container{
+        height: 100%;
+    }
+}
+.department {
+    .departmentMember {
+        overflow-y: scroll;
+        padding-top: 24px;
+    }
+    .departmentListView {
+        width: 300px;
+        padding-top: 24px;
+        .deptItem:hover{
+            .deptButtons{
+                visibility: visible;
+            }
+        }
+    }
+    .departmentListView .ant-tree {
+        width: 100%;
+        overflow: scroll;
+        flex: 1;
+    }
+    .line {
+        height: 1px;
+        background: #ddd;
+    }
+    .basicInfo .label {
+        position: relative;
+        .buttons {
+            position: absolute;
+            right: 15px;
+            top: 0;
+        }
+    }
+}

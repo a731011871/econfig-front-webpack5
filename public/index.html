@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/econfig/assets/static/tms-common-lauch-loading.css" rel="stylesheet">
+    </link>
+    <% htmlWebpackPlugin.options.tms.styles.forEach(function(item){ %>
+    <link href="<%= item %>" rel="stylesheet" />
+    <% }); %>
+    <title>eConfig</title>
+</head>
+
+<body>
+    <div id="launch-loading"
+        style="position: absolute;width: 100vw;height: 100vh;z-index: 1000;background-color: #fff;">
+        <div style="height:50%;margin:0 0 -140px;"></div>
+        <div style="height:140px;margin:0 auto;position:relative;width:120px">
+            <img style="animation:a-s .5s .5s 1 linear forwards,a-e 1.75s .5s 1 cubic-bezier(0,0,.67,1) forwards;opacity:0;transform:scale(.68);"
+                src="/econfig/assets/static/e-config.svg" />
+        </div>
+        <div id="nlpt"></div>
+        <div style="text-align: center;animation:a-s .25s 1.25s 1 forwards;opacity:0;">Loading...</div>
+        <img style="position:absolute;bottom:50px;left:calc(50% - 50px);width: 100px;" src="/econfig/assets/static/taimeilogo.svg
+            "></img>
+    </div>
+
+    <div id="root">
+    </div>
+    <% htmlWebpackPlugin.options.tms.scripts.forEach(function(item){ %>
+    <script src="<%= item %>"></script>
+    <% }); %>
+    <script src="/common-env.js"></script>
+    <!-- <% if (htmlWebpackPlugin.options.tms.BUILD_ENV==='test') { %>
+        <script>
+            (function(b) {
+                if (window.__env__) b(window.__env__.skynet);
+                else {
+                    var a = document.createElement('script'),
+                        c = document.getElementsByTagName('script')[0];
+                    a.type = 'text/javascript';
+                    a.src = '/common-env.js';
+                    a.onload = function() {
+                        b(window.__env__.skynet);
+                    };
+                    a.onerror = function(d) {
+                        console.error(d);
+                    };
+                    c.parentNode.insertBefore(a, c);
+                }
+            })(function(b) {
+                if (b && b.enable) {
+                    var a = document.createElement('script'),
+                        c = document.getElementsByTagName('script')[0];
+                    a.type = 'text/javascript';
+                    a.crossorigin = !0;
+                    a.onload = function() {
+                        try {
+                            window.skynet({
+                                appId: 'econfig',
+                                appSecret: '7f3c6629b87b8f0affa48773e7bf5171',
+                                appVer: '1.0.0',
+                                gateway: b.gateway,
+                                env: b.env,
+                                record: !1
+                            });
+                        } catch (d) {
+                            console.error('init skyent sdk fail', d);
+                        }
+                    };
+                    c.parentNode.insertBefore(a, c);
+                    a.src =
+                        '//static.mobilemd.cn/public/dyn/skynet-sdk/v1/dist.js';
+                }
+            });
+        </script>
+        <% } %>  -->
+    <% if (htmlWebpackPlugin.options.tms.BUILD_ENV==='prod') { %>
+    <script>
+        !(function (e) {
+            if (window.__env__) e(window.__env__.skynet);
+            else {
+                var t = document.createElement('script'),
+                    n = document.getElementsByTagName('script')[0];
+                (t.type = 'text/javascript'),
+                (t.src = '/common-env.js'),
+                (t.onload = function () {
+                    e(window.__env__.skynet);
+                }),
+                (t.onerror = function (e) {
+                    console.error(e);
+                }),
+                n.parentNode.insertBefore(t, n);
+            }
+        })(function (e) {
+            if (e && e.enable) {
+                var t = document.createElement('script'),
+                    n = document.getElementsByTagName('script')[0];
+                (t.type = 'text/javascript'),
+                (t.crossorigin = !0),
+                t.setAttribute('appId', 'econfig'),
+                    t.setAttribute(
+                        'appSecret',
+                        'aa7f56d536a486009afefed2ae3fbde1'
+                    ),
+                    t.setAttribute('appVer', '1.0.0'),
+                    t.setAttribute('record', 'false'),
+                    n.parentNode.insertBefore(t, n),
+                    (t.src =
+                        '//static.mobilemd.cn/public/dyn/skynet-sdk/v1/dist.js');
+            }
+        });
+    </script>
+    <% } %>
+</body>
+
+</html>

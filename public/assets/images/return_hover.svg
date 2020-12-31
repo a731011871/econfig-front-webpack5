@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="50px" viewBox="0 0 51 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="50" height="50"></rect>
+        <filter x="-3.0%" y="-1.0%" width="104.0%" height="102.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-1" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.844042304   0 0 0 0 0.844042304   0 0 0 0 0.844042304  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-14" transform="translate(1.000000, 0.000000)">
+            <g id="Rectangle-Copy-7">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M24.8493639,17 C29.3508359,17 33,20.6491641 33,25.1506361 C33,29.6521082 29.3508359,33.3012723 24.8493639,33.3012723 C21.7073362,33.3012723 18.8870673,31.5069589 17.5278028,28.7359958 C17.3475781,28.3685942 17.499315,27.9246554 17.8667166,27.7444307 C18.2341182,27.564206 18.678057,27.7159428 18.8582817,28.0833444 C19.9708597,30.3514185 22.2781093,31.8193384 24.8493639,31.8193384 C28.5323864,31.8193384 31.5180662,28.8336587 31.5180662,25.1506361 C31.5180662,21.4676136 28.5323864,18.4819338 24.8493639,18.4819338 C22.2457202,18.4819338 19.9144306,19.9872526 18.8190705,22.2992574 C18.6438608,22.6690769 18.2020274,22.8268393 17.8322079,22.6516297 C17.4623884,22.47642 17.3046259,22.0345866 17.4798356,21.6647671 C18.8181449,18.8399635 21.6676992,17 24.8493639,17 Z M23.6687023,24.4096692 C24.077927,24.4096692 24.4096692,24.7414114 24.4096692,25.1506361 C24.4096692,25.5598609 24.077927,25.8916031 23.6687023,25.8916031 L17.7409669,25.8916031 C17.3317422,25.8916031 17,25.5598609 17,25.1506361 C17,24.7414114 17.3317422,24.4096692 17.7409669,24.4096692 L23.6687023,24.4096692 Z" id="形状结合-copy" fill="#8B95A2" fill-rule="nonzero" transform="translate(25.000000, 25.150636) rotate(-270.000000) translate(-25.000000, -25.150636) "></path>
+        </g>
+    </g>
+</svg>
